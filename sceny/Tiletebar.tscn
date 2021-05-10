@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://grafika/X.png" type="Texture" id=1]
+[ext_resource path="res://skrypty/Tiletebar.gd" type="Script" id=2]
+[ext_resource path="res://grafika/tilebar.png" type="Texture" id=3]
+
+[node name="Tiletebar" type="TextureButton"]
+margin_right = 420.0
+margin_bottom = 35.0
+texture_normal = ExtResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close" type="TextureButton" parent="."]
+margin_left = 380.0
+margin_right = 420.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="." to="." method="_on_Tiletebar_button_down"]
+[connection signal="button_up" from="." to="." method="_on_Tiletebar_button_up"]
+[connection signal="pressed" from="close" to="." method="_on_close_pressed"]

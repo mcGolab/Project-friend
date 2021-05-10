@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Lastminute - XmFcvBIzBjPxb5Z.wav-cbd3f50d8ec237c026c76a844d07d342.sample"
+
+[deps]
+
+source_file="res://fonts/Lastminute - XmFcvBIzBjPxb5Z.wav"
+dest_files=[ "res://.import/Lastminute - XmFcvBIzBjPxb5Z.wav-cbd3f50d8ec237c026c76a844d07d342.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

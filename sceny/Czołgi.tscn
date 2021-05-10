@@ -1,0 +1,128 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://grafika/cagla_srodek.png" type="Texture" id=1]
+[ext_resource path="res://sceny/Gracz1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://grafika/tło.png" type="Texture" id=4]
+[ext_resource path="res://sceny/Gracz2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://fonts/dogica.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://skrypty/Zielony.gd" type="Script" id=7]
+[ext_resource path="res://skrypty/Czołgi.gd" type="Script" id=8]
+[ext_resource path="res://skrypty/czerwony.gd" type="Script" id=9]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+
+[sub_resource type="TileSet" id=2]
+1/name = "cagla_srodek.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 96, 128, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 1 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+
+[sub_resource type="DynamicFont" id=3]
+size = 66
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 6 )
+
+[node name="Czołgi" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="pixil-frame-0(1)" type="Sprite" parent="."]
+position = Vector2( 424.429, 305.169 )
+scale = Vector2( 2.07478, 1 )
+texture = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -262142, 1, 0, -262141, 1, 0, -262140, 1, 0, -262139, 1, 0, -262138, 1, 0, -262137, 1, 0, -262136, 1, 0, -262135, 1, 0, -262134, 1, 0, -262119, 1, 0, -262118, 1, 0, -262117, 1, 0, -262116, 1, 0, -262115, 1, 0, -262114, 1, 0, -262113, 1, 0, -262112, 1, 0, -262111, 1, 0, -196606, 1, 0, -196605, 1, 0, -196604, 1, 0, -196603, 1, 0, -196602, 1, 0, -196601, 1, 0, -196600, 1, 0, -196599, 1, 0, -196598, 1, 0, -196583, 1, 0, -196582, 1, 0, -196581, 1, 0, -196580, 1, 0, -196579, 1, 0, -196578, 1, 0, -196577, 1, 0, -196576, 1, 0, -196575, 1, 0, -131070, 1, 0, -131069, 1, 0, -131068, 1, 0, -131067, 1, 0, -131066, 1, 0, -131065, 1, 0, -131064, 1, 0, -131063, 1, 0, -131062, 1, 0, -131047, 1, 0, -131046, 1, 0, -131045, 1, 0, -131044, 1, 0, -131043, 1, 0, -131042, 1, 0, -131041, 1, 0, -131040, 1, 0, -131039, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 0, -65531, 1, 0, -65530, 1, 0, -65529, 1, 0, -65528, 1, 0, -65527, 1, 0, -65526, 1, 0, -65511, 1, 0, -65510, 1, 0, -65509, 1, 0, -65508, 1, 0, -65507, 1, 0, -65506, 1, 0, -65505, 1, 0, -65504, 1, 0, -65503, 1, 0, 65544, 1, 0, 65545, 1, 0, 65546, 1, 0, 65547, 1, 0, 65548, 1, 0, 65549, 1, 0, 65558, 1, 0, 65559, 1, 0, 65560, 1, 0, 65561, 1, 0, 65562, 1, 0, 65563, 1, 0, 65564, 1, 0, 131085, 1, 0, 131094, 1, 0, 196621, 1, 0, 196630, 1, 0, 262152, 1, 0, 262153, 1, 0, 262154, 1, 0, 262155, 1, 0, 262156, 1, 0, 262157, 1, 0, 262166, 1, 0, 262167, 1, 0, 262168, 1, 0, 262169, 1, 0, 262170, 1, 0, 262171, 1, 0, 262172, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589846, 1, 0, 589847, 1, 0, 589848, 1, 0, 589849, 1, 0, 589850, 1, 0, 589851, 1, 0, 655373, 1, 0, 655382, 1, 0, 720909, 1, 0, 720918, 1, 0, 786440, 1, 0, 786441, 1, 0, 786442, 1, 0, 786443, 1, 0, 786444, 1, 0, 786445, 1, 0, 786454, 1, 0, 786455, 1, 0, 786456, 1, 0, 786457, 1, 0, 786458, 1, 0, 786459, 1, 0, 917506, 1, 0, 917507, 1, 0, 917508, 1, 0, 917509, 1, 0, 917510, 1, 0, 917511, 1, 0, 917512, 1, 0, 917513, 1, 0, 917514, 1, 0, 917529, 1, 0, 917530, 1, 0, 917531, 1, 0, 917532, 1, 0, 917533, 1, 0, 917534, 1, 0, 917535, 1, 0, 917536, 1, 0, 917537, 1, 0, 983042, 1, 0, 983043, 1, 0, 983044, 1, 0, 983045, 1, 0, 983046, 1, 0, 983047, 1, 0, 983048, 1, 0, 983049, 1, 0, 983050, 1, 0, 983065, 1, 0, 983066, 1, 0, 983067, 1, 0, 983068, 1, 0, 983069, 1, 0, 983070, 1, 0, 983071, 1, 0, 983072, 1, 0, 983073, 1, 0, 1048578, 1, 0, 1048579, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048601, 1, 0, 1048602, 1, 0, 1048603, 1, 0, 1048604, 1, 0, 1048605, 1, 0, 1048606, 1, 0, 1048607, 1, 0, 1048608, 1, 0, 1048609, 1, 0, 1114114, 1, 0, 1114115, 1, 0, 1114116, 1, 0, 1114117, 1, 0, 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114137, 1, 0, 1114138, 1, 0, 1114139, 1, 0, 1114140, 1, 0, 1114141, 1, 0, 1114142, 1, 0, 1114143, 1, 0, 1114144, 1, 0, 1114145, 1, 0 )
+
+[node name="Gracz1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 185.069, 381.926 )
+rotation = -1.5708
+
+[node name="Gracz2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 971.453, 393.171 )
+rotation = -1.5708
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -6.90399, -0.0871277 )
+rotation = -1.5708
+anchor_mode = 0
+
+[node name="Zielony" type="Label" parent="."]
+modulate = Color( 0.211765, 1, 0, 1 )
+margin_left = 354.672
+margin_top = -130.289
+margin_right = 420.672
+margin_bottom = -69.2894
+custom_fonts/font = SubResource( 3 )
+text = "0"
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="czerwony" type="Label" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 742.024
+margin_top = -133.853
+margin_right = 808.024
+margin_bottom = -72.853
+custom_fonts/font = SubResource( 3 )
+text = "0"
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2( 574.869, 222.851 )
+current = true
+zoom = Vector2( 1.001, 1.187 )
+
+[node name="Zielonywin" type="Label" parent="."]
+margin_left = 287.0
+margin_top = 202.0
+margin_right = 847.0
+margin_bottom = 253.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.211765, 1, 0, 1 )
+text = "Zielony wygral!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="czeronywin" type="Label" parent="."]
+margin_left = 287.0
+margin_top = 202.0
+margin_right = 847.0
+margin_bottom = 253.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Czerwony wygral!"
+__meta__ = {
+"_edit_use_anchors_": false
+}

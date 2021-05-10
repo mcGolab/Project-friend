@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Matrix-Raining-Code.ogg-4ddef3a4f6748cdb312a1fb93ecd9725.oggstr"
+
+[deps]
+
+source_file="res://grafika/Matrix-Raining-Code.ogg"
+dest_files=[ "res://.import/Matrix-Raining-Code.ogg-4ddef3a4f6748cdb312a1fb93ecd9725.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
